@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+.wrap{
+  background: darkseagreen;
+  border: 2px solid darkslategrey;
+  /*border-radius: 50%;*/
+}
+h1{
+  margin: 5px 5px 0;
+  font-family:"Book Antiqua";
+  background-color: palegreen;
+  color: darkslategrey;
+  text-align: center;
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+
+}
+.characters{
+  display: flex;
+  justify-content:center;
+  font-family: "Times New Roman";
+  color: darkslategrey;
+}
+.stylecard{
+  width: 20%;
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+  background-color: palegreen;
+  margin: 2px;
+  text-align: justify;
+  text-align: -webkit-center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p{
+  font-size: 10px;
+}

@@ -1,23 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+import SimpsonComponent from "./components/SimpsonComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrap">
+<h1>Родина Cімпсонів:</h1>
+        <div className="characters">
+            <SimpsonComponent CharacterFirstPart={'Гомер Джей Сімпсон — батько родини, гладкий, лисий, ледачий і не дуже розумний.\n' +
+                '                Він часто поводиться абсурдно, егоїстично і нетактовно, втім,\n' +
+                '                залишається симпатичним.'}
+                              pic={"https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png"}
+                              altDesc={"Gomer"}
+                              Desc={'Клішем Гомера є вигук «Д\'оу!» (англ. D\'oh!), що вимовляється,\n' +
+                                  '                коли персонаж травмує себе, усвідомлює, що зробив щось дурне,\n' +
+                                  '                або, коли з ним трапилося або має трапитися щось погане.'}/>
+
+            <SimpsonComponent CharacterFirstPart={'Марджері «Мардж» Сімпсон — дружина Гомера, дівоче ім`я — Був`є.' +
+                ' Домогосподарка, майже весь час проводить вдома, доглядаючи' +
+                'за наймолодшою дитиною Меґґі, а також за Бартом і Лісою,' +
+                'і навіть за чоловіком.'}
+            pic={"https://upload.wikimedia.org/wikipedia/uk/0/0b/Marge_Simpson.png"}
+            altDesc={"Marge"}
+            Desc={'Одна з фраз Марджері: "Я знала, що ти забудеш купити мені подарунок,\n' +
+                '                    тому мій подарунок тобі — це твій подарунок мені."'}/>
+
+            <SimpsonComponent CharacterFirstPart={'Бартоломео «Барт» Сімпсон — 10-літній син Гомера і Мардж Сімпсон, найстарша дитина в сім`ї, втіллення образу непослуха, бешкетника і посереднього учня в школі.'}
+                              pic={"https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png"}
+                              altDesc={"Bart"}
+                              Desc={'Крилатий вислів Барта «Поцілуй мене в шорти!» (в оригіналі: «З`їж мої шорти!») народився спонтанно. Картрайт зімпровізувала його, пригадавши один випадок, що стався з нею в коледжі.'}/>
+            <SimpsonComponent CharacterFirstPart={'Ліса Мері Сімпсон — дочка Гомера і Мардж Сімпсон, надзвичайно розумна, не по літах розвинена, суспільно активна дівчинка.'}
+                              pic={"https://upload.wikimedia.org/wikipedia/uk/thumb/a/ae/Lisasmiling.png/340px-Lisasmiling.png"}
+                              altDesc={"Lisa"}
+                              Desc={'Знання Ліси охоплюють широке коло галузей, від астрономії до медицини, і більше зосереджені на світових справах, ніж на повсякденному житті. Інтелект і особиста успішність Ліси є характерною рисою, притаманною жіночій лінії родини Сімпсонів'}/>
+            <SimpsonComponent CharacterFirstPart={'Маргарет «Меґґі» Сімпсон — найменша дочка Гомера в Мардж Сімпсон. Протягом усіх років серіалу не росте і завжди залишається немовлям у повзунках та підгузнику.'}
+                              pic={'https://upload.wikimedia.org/wikipedia/uk/9/9d/Maggie_Simpson.png'}
+                              altDesc={'Meggy'}
+                              Desc={'Має схильність використовувати зброю всіх видів і вміє з нею поводитися: завдала важкі поранення молотком Гомеру під впливом «Чуха й Сверблячки», робила замах на містера Бернса в епізоді "Хто стріляв в пана Бернза? ".'}
+            />
+        </div>
     </div>
   );
 }
